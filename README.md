@@ -2,7 +2,7 @@
 
 Landing page and download host for **Plasma Foundry** — cohesive theme packs for KDE Plasma, starting with **Nightfall**. Plain HTML/CSS, no build step, served via GitHub Pages.
 
-The actual downloadable binaries (`downloads/*.AppImage`, `*.flatpak`) are committed straight into this repo and served as static files. They're built from the (private) Nightfall source repo's CI — when a new version ships, pull the fresh artifacts from there and replace the files in `downloads/`.
+The actual downloadable binaries (`downloads/*.AppImage`, `*.flatpak`) are committed straight into this repo and served as static files. They're built from the (private) [plasma-foundry-app](https://github.com/jacksoneyton/plasma-foundry-app) repo's CI — when a new version ships, pull the fresh artifacts from there and replace the files in `downloads/`. Theme pack content (`catalog.json`, `themes/*`) comes from each theme pack's own repo instead — Nightfall's is [jacksoneyton/Nightfall](https://github.com/jacksoneyton/Nightfall).
 
 When a second theme pack exists, this is also where the site grows from a single-theme landing page into a small catalog — not built out yet since there's nothing to catalog.
 
