@@ -1,5 +1,5 @@
 [General]
-background=/usr/share/sddm/themes/breeze/nightfall-bg.png
+background=/usr/share/sddm/themes/breeze/plasma-foundry-bg.png
 color=#16171D
 type=image
 showClock=true
