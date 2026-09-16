@@ -1,0 +1,7 @@
+[General]
+background=/usr/share/sddm/themes/breeze/nightfall-bg.png
+color=#16171D
+type=image
+showClock=true
+showlogo=hidden
+fontSize=10
