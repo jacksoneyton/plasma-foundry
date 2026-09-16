@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nightfall by Plasma Foundry — a cohesive dark theme for KDE Plasma</title>
-<meta name="description" content="Plasma Foundry builds cohesive theme packs for KDE Plasma, starting with Nightfall — one deliberate design across your color scheme, icons, cursor, fonts, GTK apps, Konsole, and wallpaper. Download a single file, no package manager required.">
+<title>Plasma Foundry — browse and apply KDE Plasma theme packs</title>
+<meta name="description" content="Plasma Foundry is a native app that browses, applies, and reverts cohesive theme packs for KDE Plasma 6 — starting with Nightfall. New theme packs show up in the app on their own; no need to download a new version to get them.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,45 +23,49 @@
       <a href="#install">Download</a>
       <a href="#gallery">Screenshots</a>
       <a href="#support">Support</a>
-      <a class="btn btn-primary" href="downloads/Nightfall-x86_64.AppImage" download>Download</a>
+      <a class="btn btn-primary" href="downloads/PlasmaFoundry-x86_64.AppImage" download>Download</a>
     </div>
   </div>
 </nav>
 
 <header id="top" class="hero">
   <div class="wrap">
-    <span class="eyebrow">
-      <img src="assets/nightfall-icon.svg" alt="" style="width:16px;height:16px;border-radius:4px;">
-      Plasma Foundry · Theme Pack No. 1
-    </span>
-    <h1>Nightfall</h1>
+    <span class="eyebrow">For KDE Plasma 6 · any distro</span>
+    <h1>Plasma Foundry</h1>
     <p class="lead">
-      A cohesive dark theme for KDE Plasma — one deliberate design across your
-      color scheme, icons, cursor, fonts, GTK apps, Konsole, and wallpaper,
-      instead of a dozen half-matched defaults.
+      Browse, apply, and revert cohesive theme packs for KDE Plasma —
+      one deliberate design across your color scheme, icons, cursor,
+      fonts, GTK apps, Konsole, and wallpaper, instead of a dozen
+      half-matched defaults.
     </p>
     <div class="hero-actions">
-      <a class="btn btn-primary btn-lg" href="downloads/Nightfall-x86_64.AppImage" download>
-        Download for Linux
+      <a class="btn btn-primary btn-lg" href="downloads/PlasmaFoundry-x86_64.AppImage" download>
+        Download Plasma Foundry
       </a>
       <a class="btn btn-secondary btn-lg" href="#install">
         Other install options
       </a>
     </div>
     <p class="hero-meta">
-      Nightfall-x86_64.AppImage · 2.7&nbsp;MB · runs on any Linux distro running KDE Plasma 6, no install step
+      PlasmaFoundry-x86_64.AppImage · runs on any Linux distro running KDE Plasma 6, no install step ·
+      new theme packs show up inside the app on their own, no update needed
     </p>
 
     <div class="hero-shot wrap" style="padding:0;">
-      <img src="assets/screenshots/desktop.jpg" alt="Nightfall theme applied to a KDE Plasma desktop, showing the dark panel, wallpaper, and periwinkle accent color">
+      <img src="assets/screenshots/desktop.jpg" alt="The Nightfall theme pack applied to a KDE Plasma desktop via Plasma Foundry, showing the dark panel, wallpaper, and periwinkle accent color">
     </div>
   </div>
 </header>
 
-<section class="palette">
+<section class="alt" id="featured-theme">
   <div class="wrap">
-    <div class="section-head" style="margin-bottom:28px;">
-      <h2 style="font-size:1.3rem;">The palette</h2>
+    <div class="section-head">
+      <span class="eyebrow" style="margin-bottom: 16px;">
+        <img src="assets/nightfall-icon.svg" alt="" style="width:16px;height:16px;border-radius:4px;">
+        Featured theme pack
+      </span>
+      <h2>Nightfall</h2>
+      <p>A cohesive dark theme for KDE Plasma — one deliberate design across your color scheme, icons, cursor, fonts, GTK apps, Konsole, and wallpaper.</p>
     </div>
     <div class="palette-row">
       <div class="swatch">
@@ -85,10 +89,11 @@
         <code>#E3E5EC</code>
       </div>
     </div>
+    <p class="install-note">More theme packs are on the way — they'll show up right in the app, no reinstall needed.</p>
   </div>
 </section>
 
-<section class="alt" id="features">
+<section id="features">
   <div class="wrap">
     <div class="section-head">
       <h2>Every surface, matching</h2>
@@ -164,11 +169,11 @@
   </div>
 </section>
 
-<section id="gallery">
+<section class="alt" id="gallery">
   <div class="wrap">
     <div class="section-head">
       <h2>See it in action</h2>
-      <p>The desktop and the app that installs it — same palette throughout.</p>
+      <p>The desktop, and Plasma Foundry itself — same palette throughout.</p>
     </div>
     <div class="gallery">
       <figure>
@@ -176,18 +181,18 @@
         <figcaption>Dolphin — rounded, translucent window chrome</figcaption>
       </figure>
       <figure>
-        <img src="assets/screenshots/gui-welcome.jpg" alt="The Nightfall installer application's welcome screen">
-        <figcaption>The installer app itself</figcaption>
+        <img src="assets/screenshots/gui-welcome.jpg" alt="The Plasma Foundry application">
+        <figcaption>Plasma Foundry itself</figcaption>
       </figure>
     </div>
   </div>
 </section>
 
-<section class="alt" id="install">
+<section id="install">
   <div class="wrap">
     <div class="section-head">
       <h2>Install it</h2>
-      <p>One file, no package manager required. Native packages are also available if you'd rather your package manager track it.</p>
+      <p>One file gets you the app — pick and apply theme packs from inside it. Works the same on every distro running KDE Plasma 6.</p>
     </div>
 
     <div class="install-primary">
@@ -196,37 +201,32 @@
         AppImage — works on any distro
       </div>
       <p class="desc">Download, make it executable, run it. That's the whole install.</p>
-      <pre class="code-block"><span class="comment"># Download Nightfall-x86_64.AppImage above, then:</span>
-chmod +x Nightfall-x86_64.AppImage
-./Nightfall-x86_64.AppImage</pre>
+      <pre class="code-block"><span class="comment"># Download PlasmaFoundry-x86_64.AppImage above, then:</span>
+chmod +x PlasmaFoundry-x86_64.AppImage
+./PlasmaFoundry-x86_64.AppImage</pre>
     </div>
 
     <div class="install-alt-grid">
       <div class="install-alt-card">
-        <h3>Debian / Ubuntu / derivatives</h3>
-        <pre class="code-block">sudo apt install ./nightfall-gui_*.deb</pre>
-      </div>
-      <div class="install-alt-card">
-        <h3>Fedora / openSUSE / RHEL-family</h3>
-        <pre class="code-block">sudo dnf install ./nightfall-gui-*.rpm
-<span class="comment"># or: sudo zypper install ./nightfall-gui-*.rpm</span></pre>
+        <h3>Flatpak — sandboxed, updatable installs</h3>
+        <pre class="code-block">flatpak install --user ./PlasmaFoundry.flatpak
+flatpak run io.github.jacksoneyton.plasmafoundry</pre>
       </div>
     </div>
 
     <p class="install-note">
-      On Arch, Manjaro, or anything else — the AppImage above just works, no packaging needed.
+      No native .deb, .rpm, or Arch package — AppImage and Flatpak already cover every distro uniformly, without a separate build and dependency list for each one.
     </p>
 
     <div style="display:flex; justify-content:center; gap:14px; flex-wrap:wrap; margin-top:36px;">
-      <a class="btn btn-secondary" href="downloads/nightfall-gui_1.2.0_amd64.deb" download>Download .deb</a>
-      <a class="btn btn-secondary" href="downloads/nightfall-gui-1.2.0-1.x86_64.rpm" download>Download .rpm</a>
+      <a class="btn btn-secondary" href="downloads/PlasmaFoundry.flatpak" download>Download .flatpak</a>
     </div>
   </div>
 </section>
 
-<section class="support" id="support">
+<section class="alt support" id="support">
   <div class="wrap" style="max-width:560px;">
-    <h2 style="font-size:1.8rem; margin-bottom:12px;">Enjoying Nightfall?</h2>
+    <h2 style="font-size:1.8rem; margin-bottom:12px;">Enjoying Plasma Foundry?</h2>
     <p style="color:var(--text-dim); margin-bottom:8px;">
       It's free, open, and always will be. If it saved you some tinkering, a coffee is always appreciated — never required.
     </p>
@@ -246,7 +246,7 @@ chmod +x Nightfall-x86_64.AppImage
 
 <footer>
   <div class="wrap">
-    <span>Plasma Foundry · Nightfall is MIT licensed · more theme packs on the way</span>
+    <span>Plasma Foundry · theme packs are MIT licensed · more on the way</span>
     <div class="footer-links">
       <a href="https://github.com/jacksoneyton" target="_blank" rel="noopener">GitHub</a>
       <a href="https://buymeacoffee.com/jacksoneyton" target="_blank" rel="noopener">Buy me a coffee</a>
