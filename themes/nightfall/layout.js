@@ -68,3 +68,19 @@ var layout = {
 };
 
 plasma.loadSerializedLayout(layout);
+
+// loadSerializedLayout's JSON schema has no "floating"/"lengthMode"/
+// "opacity" keys at all — confirmed by inspecting its own output via
+// dumpCurrentLayoutJS(), which never includes them either. Without this
+// second pass panels come out flush against the screen edge, full-width,
+// opaque — not the floating, centered, translucent pill look every
+// screenshot of this design actually has. Has to be set via the
+// imperative Panel API instead, which does expose them as real
+// properties (confirmed on a live panel: floating=true, lengthMode=
+// "fill"/"fit", opacity="adaptive"/"translucent").
+for (var i = 0; i < panelIds.length; i++) {
+    var p = panelById(panelIds[i]);
+    p.floating = true;
+    p.opacity = (p.location === "bottom") ? "translucent" : "adaptive";
+    p.lengthMode = (p.location === "bottom") ? "fit" : "fill";
+}
