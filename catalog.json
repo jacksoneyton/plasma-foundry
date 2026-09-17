@@ -3,8 +3,8 @@
     {
       "id": "nightfall",
       "displayName": "Nightfall",
-      "description": "A cohesive dark theme for KDE Plasma — one deliberate design across your color scheme, icons, cursor, fonts, GTK apps, Konsole, and wallpaper.",
-      "version": "1.2.0",
+      "description": "A cohesive dark theme for KDE Plasma — one deliberate design across your color scheme, icons, cursor, fonts, GTK apps, Konsole, wallpaper, and (optionally) your panel layout.",
+      "version": "1.3.0",
       "palette": ["#14151A", "#1B1D24", "#6F8FFA", "#5FD1C0", "#E3E5EC"],
       "baseUrl": "https://jacksoneyton.github.io/plasma-foundry/themes/nightfall/",
       "screenshot": "screenshot.jpg",
@@ -13,7 +13,8 @@
       "konsoleColorScheme": "Nightfall.colorscheme",
       "konsoleProfile": "Nightfall.profile",
       "wallpaper": "wallpaper.png",
-      "sddmThemeConf": "sddm-theme.conf.user"
+      "sddmThemeConf": "sddm-theme.conf.user",
+      "panelLayout": "layout.js"
     }
   ]
 }
